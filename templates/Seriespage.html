@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AnimeBox</title>
+        <link rel="icon" type="image/x-icon" href="https://th.bing.com/th/id/R.b55ced8d256e4f77d28975cc85b668dd?rik=HwBS3fBb9KpEIQ&riu=http%3a%2f%2fwww.freepngimg.com%2fdownload%2fanime_boy%2f25983-5-anime-boy-clipart.png&ehk=9YbNkmgvue3ugN0oDzZXEUbp%2fPwQ0MsH0U75vy4yZNc%3d&risl=&pid=ImgRaw&r=0"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <img class="logo" src="https://th.bing.com/th/id/R.b55ced8d256e4f77d28975cc85b668dd?rik=HwBS3fBb9KpEIQ&riu=http%3a%2f%2fwww.freepngimg.com%2fdownload%2fanime_boy%2f25983-5-anime-boy-clipart.png&ehk=9YbNkmgvue3ugN0oDzZXEUbp%2fPwQ0MsH0U75vy4yZNc%3d&risl=&pid=ImgRaw&r=0" align="left"/>
+        <h1>Series</h1>
+        <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="./movies">Movies</a></li>
+            <li><a href="./games">Games</a></li>
+            <li><a href="#about">About</a></li>
+            <li style="float:right">
+                {% if username %}
+                <a class="Logout">Logout &nbsp;<img src="https://pic.onlinewebfonts.com/svg/img_342905.png" style="height: 20px;height: 20px;padding: 0px 0px; margin-right: 0px;" align="right"></a>
+                {% else %}
+                    <a href="./login">Login</a>
+                {% endif %}
+            </li>
+        </ul>
+        <script src="{{ url_for('static', filename='js/Logout.js') }}"></script>
+        <fieldset>
+            <h2><u>Naruto</u></h2>
+            <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/8532171bec0d05bfe45769a330fbab82.jpe" style="height:500px;width:500px">
+            <p>
+                A long-running anime series about a young ninja named Naruto Uzumaki who dreams of becoming the Hokage, the leader of his village.</p>
+            <a href="https://9animetv.to/watch/naruto-677" class="button">Watch Now</a>
+            </br></br>
+            <hr>
+
+
+            <h2><u>Dragon Ball</u></h2>
+            <img src="https://m.media-amazon.com/images/M/MV5BYzI0YjYxY2UtNzRjNS00NTZiLTgzMDItNGEzMjU5MmE0ZWJmXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg" style="height:500px;width:500px">
+            <p>
+                The latest opus in the acclaimed STORM series is taking you on a colourful and breathtaking ride. Take advantage of the totally revamped battle system and prepare to dive into the most epic fights you’ve ever seen in the NARUTO SHIPPUDEN: Ultimate Ninja STORM series!
+            </p>
+            <a href="https://9animetv.to/watch/dragon-ball-509" class="button">Watch Now</a>
+            </br></br>
+            <hr>
+            
+            
+            <h2><u>Death note</u></h2>
+            <img src="https://m.media-amazon.com/images/M/MV5BNjRiNmNjMmMtN2U2Yi00ODgxLTk3OTMtMmI1MTI1NjYyZTEzXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg" style="height:500px;width:500px">
+            <p>
+                With the power of Persona, make these criminals have a change of heart by stealing the Treasure of their distorted desires. Join your new friends in the fight to reform society with your own sense of justice!
+            </p>
+            <a href="https://9animetv.to/watch/death-note-60" class="button">Watch Now</a>
+            </br></br>
+            <hr>
+            
+            
+            <h2><u>Attack on Titan</u></h2>
+            <img src="https://flxt.tmsimg.com/assets/p13993632_b_v8_ab.jpg" style="height:500px;width:500px">
+            <p>
+                Abandon all fear. Attack on Titan 2 is the gripping sequel to the action game based on the worldwide hit anime series 'Attack on Titan.'Experience the immense story of the anime alongside Eren and his companions, as they fight to save humanity from the threat of the deadly human devouring Titans.
+            </p>
+            <a href="https://9animetv.to/watch/attack-on-titan-112" class="button">Watch Now</a>
+            </br></br>
+            <hr>
+            
+            
+            <h2><u>One Piece</u></h2>
+            <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/11/should-you-watch-one-piece.jpg" style="height:500px;width:500px">
+            <p>
+                The PIRATE WARRIORS series has successfully combined the popular anime ONE PIECE with the thrilling action of the WARRIORS series to create a worldwide phenomenon selling more than four million copies! Based on the concept of 'fighting hordes of enemies while adventuring with trusted allies,' experience awesome ONE PIECE action lifted straight from the anime!
+            </p>
+            <a href="https://9animetv.to/watch/one-piece-100" class="button">Watch Now</a>
+            </br></br>
+            <hr>
+            
+            
+            <h2><u>Demon Slayer</u></h2>
+            <img src="https://m.media-amazon.com/images/M/MV5BZjZjNzI5MDctY2Y4YS00NmM4LTljMmItZTFkOTExNGI3ODRhXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_.jpg" style="height:500px;width:500px">
+            <p>
+                The PIRATE WARRIORS series has successfully combined the popular anime ONE PIECE with the thrilling action of the WARRIORS series to create a worldwide phenomenon selling more than four million copies! Based on the concept of 'fighting hordes of enemies while adventuring with trusted allies,' experience awesome ONE PIECE action lifted straight from the anime!
+            </p>
+            <a href="https://9animetv.to/watch/demon-slayer-kimetsu-no-yaiba-47" class="button">Watch Now</a>
+            </br></br>
+        </fieldset>
+        <footer id="about">
+            <p>Thanks for visiting our site, and we hope you enjoy exploring all that Animebox has to offer!</p>
+            <p>&copy; 2023 AnimeBox</p><p></p>All rights reserved.</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AnimeBox</title>
+        <link rel="icon" type="image/x-icon" href="https://th.bing.com/th/id/R.b55ced8d256e4f77d28975cc85b668dd?rik=HwBS3fBb9KpEIQ&riu=http%3a%2f%2fwww.freepngimg.com%2fdownload%2fanime_boy%2f25983-5-anime-boy-clipart.png&ehk=9YbNkmgvue3ugN0oDzZXEUbp%2fPwQ0MsH0U75vy4yZNc%3d&risl=&pid=ImgRaw&r=0"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <img class="logo" src="https://th.bing.com/th/id/R.b55ced8d256e4f77d28975cc85b668dd?rik=HwBS3fBb9KpEIQ&riu=http%3a%2f%2fwww.freepngimg.com%2fdownload%2fanime_boy%2f25983-5-anime-boy-clipart.png&ehk=9YbNkmgvue3ugN0oDzZXEUbp%2fPwQ0MsH0U75vy4yZNc%3d&risl=&pid=ImgRaw&r=0" align="left"/>
+        <h1>Movies</h1>
+        <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="./games">Games</a></li>
+            <li><a href="./series">Series</a></li>
+            <li><a href="#about">About</a></li>
+            <li style="float:right">
+                {% if username %}
+                <a class="Logout">Logout &nbsp;<img src="https://pic.onlinewebfonts.com/svg/img_342905.png" style="height: 20px;height: 20px;padding: 0px 0px; margin-right: 0px;" align="right"></a>
+                {% else %}
+                    <a href="./login">Login</a>
+                {% endif %}
+            </li>
+        </ul>
+        <script src="{{ url_for('static', filename='js/Logout.js') }}"></script>
+        <fieldset>
+            <h2><u>JUJUTSU KAISEN 0</u></h2>
+            <img src="https://lh4.googleusercontent.com/Cn4mhi7A8DGH_PvSD6R1Hzx9VRjGmJhLBhESV_8r3vBPOikDKswHrCL8bQyhwS1kwkFG_Z9drCyHE806X5X729DQv-nMOISrguroOzc4DV3JDwKyadn-qqQXbFxiB0mL6W0knx3J" style="height:500px;width:500px">
+            <p>
+                It is the first anime movie of the popular series Jujutsu Kaisen based on the volume 0 of the original manga series. The prequel tells the story of Yuta Okkotsu, who enters the Jujutsu high school a year ahead of the main characters including Yuji Itadori and Megumi Fushiguro.
+
+            </p>
+            <p>
+                Director :Seong-Hu Park</br>
+                Writers :Gege Akutami, Hiroshi Seko
+            </p>
+            <a href="https://www.imdb.com/title/tt14331144/" class="button">Details</a>
+            </br></br>
+            <hr>
+            <h2><u>DRAGON BALL SUPER : SUPER HERO</u></h2>
+            <img src="https://en.dragon-ball-official.com/dragonball/en/news/2022/02/dbs_pub_vol_2_en.jpg?_=1680939600" style="height:500px;width:500px">
+            <p>
+                In addition to the popular main characters including Goku and Gohan, an evil organization The Red Ribbon Army, which was smashed by Goku in the beginning part of the story, is featured in this movie.
+
+            </p>
+            <p>
+                Director :Tetsuro Kodama</br>
+                Writers :Akira Toriyama
+            </p>
+            <a href="https://www.imdb.com/title/tt14614892/" class="button">Details</a>
+            </br></br>
+            <hr>
+            <h2><u>DEMON SLAYER :MUGEN TRAIN</u></h2>
+            <img src="https://www.otakuusamagazine.com/wp-content/uploads/2020/04/demon-slayer-mugen-train.jpeg" style="height:500px;width:500px">
+            <p>
+                Falling forever into an endless dream... Tanjiro and the group have completed their rehabilitation training at the Butterfly Mansion, and they arrive to their next mission on the Mugen Train, where over 40 people have disappeared in a very short period of time.
+            </p>
+            <p>
+                Director :Haruo Sotozaki</br>
+                Writers :Koyoharu Gotouge, Ufotable
+            </p>
+            <a href="https://www.imdb.com/title/tt11032374/" class="button">Details</a>
+            </br></br>
+            <hr>
+            <h2><u>A Silent Voice</u></h2>
+            <img src="https://cdn.hmv.com/r/w-1280/hmv/files/d4/d4be2aec-199b-4f01-9d19-283bac304ac9.jpg" style="height:500px;width:500px">
+            <p>
+                A young man is ostracized by his classmates after he bullies a deaf girl to the point where she moves away. Years later, he sets off on a path for redemption.
+            </p>
+            <p>
+                Director :Naoko Yamada</br>
+                Writers :Yoshitoki Oima, Reiko Yoshida, Kiyoshi Shigematsu.
+            </p>
+            <a href="https://www.imdb.com/title/tt5323662/" class="button">Details</a>
+            </br></br>
+            <hr>
+            <h2><u>Your Name</u></h2>
+            <img src="https://www.slugmag.com/wp/wp-content/uploads/2017/04/screen-shot-2016-11-27-at-1-42-50-pm.png" style="height:500px;width:500px">
+            <p>
+                Two strangers find themselves linked in a bizarre way. When a connection forms, will distance be the only thing to keep them apart?
+            </p>
+            <p>
+                Director :Makoto Shinkai</br>
+                Writers :Makoto Shinkai, Clark Cheng.
+            </p>
+            <a href="https://www.imdb.com/title/tt5311514/" class="button">Details</a>
+            </br></br>
+            <hr>
+            <h2><u>Pokémon the Movie: Hoopa and the Clash of Ages</u></h2>
+            <img src="https://img.moviesrankings.com/t/p/w1280/a7KeEZZ1SbLifwSdmcz6Sm1oOlH.jpg" style="height:500px;width:500px">
+            <p>
+                Ash, Pikachu, and their friends meet the mythical Pokémon Hoopa. The little Pokémon likes to use his talent to play harmless tricks on people. When its true power is released, it loses control and becomes the terrifying Hoopa Unbound.
+            </p>
+            <p>
+                Director :Kunihiko Yuyama</br>
+                Writers :Atsuhiro Tomioka, Satoshi Tajiri, Junichi Masuda
+            </p>
+            <a href="https://www.imdb.com/title/tt4503906/" class="button">Details</a>
+            </br></br>
+            <hr>
+            <h2><u>Suzume</u></h2>
+            <img src="https://th.bing.com/th/id/OIP.buddBUxnAY-cP1VHN7Nr1gHaKe?pid=ImgDet&rs=1" style="height:500px;width:500px">
+            <p>
+                A modern action adventure road story where a 17-year-old girl named Suzume helps a mysterious young man close doors from the other side that are releasing disasters all over in Japan.
+            </p>
+            <p>
+                Director :Makoto Shinkai</br>
+                Writers :Makoto Shinkai
+            </p>
+            <a href="https://www.imdb.com/title/tt16428256/" class="button">Details</a>
+            </br></br>
+        </fieldset>
+        <footer id="about">
+            <p>Thanks for visiting our site, and we hope you enjoy exploring all that Animebox has to offer!</p>
+            <p>&copy; 2023 AnimeBox</p><p></p>All rights reserved.</p>
+        </footer>
+    </body>
+</html>

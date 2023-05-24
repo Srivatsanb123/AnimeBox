@@ -1,0 +1,100 @@
+body {
+    background: #202125;
+    font-family: "Montserrat", Arial;
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-weight: 400;
+    padding: 0;
+    margin: 0; 
+    }
+fieldset {
+    background: #ffffff1a;
+    border: none;
+}
+h1 {
+    color: silver;
+    font-family:monospace;
+    font-size: 50px;
+    padding-top: 22px;
+    padding-left: 60px;
+    
+}
+h2 {
+    color: red;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+}
+strong {
+    font-size: 20px;
+}
+img {
+    
+    border-width: 100px;
+    border-radius: 100px;
+    padding: 5px 5px;
+    display: block;
+    margin:auto;
+}
+p {
+    color: silver;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #202125;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 50px;
+    text-decoration: none;
+    
+}
+
+li a:hover {
+    background-color: #333;
+}
+
+.button {
+    background-color: Black;
+    color: #ffffffe4;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #666;
+}
+
+footer {
+    background-color: #202125;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+}
+.Logout{
+    background-color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" type="image/x-icon" href="https://th.bing.com/th/id/R.b55ced8d256e4f77d28975cc85b668dd?rik=HwBS3fBb9KpEIQ&riu=http%3a%2f%2fwww.freepngimg.com%2fdownload%2fanime_boy%2f25983-5-anime-boy-clipart.png&ehk=9YbNkmgvue3ugN0oDzZXEUbp%2fPwQ0MsH0U75vy4yZNc%3d&risl=&pid=ImgRaw&r=0"/>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				background-color: #202125;
+				font-family: Arial, sans-serif;
+			}
+			form {
+				width: 400px;
+				background-color: #fff;
+				padding: 40px;
+				border-radius: 5px;
+				position: center;
+				margin: 0 auto;
+			}
+			a{
+				background-color: #333;
+				color: #fff;
+				padding: 10px 20px;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				transition: background-color 0.2s ease-in-out;
+			}
+			.login {
+				text-align: center;
+				font-size: 2.5em;
+				font-weight: bold;
+				color:silver;
+			}
+			.newuser{
+				text-align: center;
+				color: aqua;
+			}
+			input[type="email"],
+			input[type="password"] {
+				width: 100%;
+				padding: 10px;
+				margin-bottom: 20px;
+				border-radius: 5px;
+				border: none;
+				box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+			}
+			input[type="submit"] {
+				background-color: #333;
+				color: #fff;
+				padding: 10px 20px;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				transition: background-color 0.2s ease-in-out;
+			}
+			input[type="submit"]:hover {
+				background-color: #555;
+			}
+		</style>
+		<title>AnimeBox</title>
+	</head>
+	<body>
+		<h1 class="login">Login</h1>
+		<form method="post">
+			{% if error %}
+				<p>{{ error }}</p>
+			{% endif %}
+			<input type="email" id="email" name="email"  placeholder="Enter email" required><br>
+			<input type="password" id="password" name="password" placeholder="Enter password" required><br>
+			<input type="submit" value="Login">
+		</form>
+		<br>
+		<div class="newuser">
+			<strong>New User?</strong><br><br>
+			<a href="./signup">Sign Up</a>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AnimeBox</title>
+        <link rel="icon" type="image/x-icon" href="https://th.bing.com/th/id/R.b55ced8d256e4f77d28975cc85b668dd?rik=HwBS3fBb9KpEIQ&riu=http%3a%2f%2fwww.freepngimg.com%2fdownload%2fanime_boy%2f25983-5-anime-boy-clipart.png&ehk=9YbNkmgvue3ugN0oDzZXEUbp%2fPwQ0MsH0U75vy4yZNc%3d&risl=&pid=ImgRaw&r=0"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <img class="logo" src="https://th.bing.com/th/id/R.b55ced8d256e4f77d28975cc85b668dd?rik=HwBS3fBb9KpEIQ&riu=http%3a%2f%2fwww.freepngimg.com%2fdownload%2fanime_boy%2f25983-5-anime-boy-clipart.png&ehk=9YbNkmgvue3ugN0oDzZXEUbp%2fPwQ0MsH0U75vy4yZNc%3d&risl=&pid=ImgRaw&r=0" align="left"/>
+        <h1>Games</h1>
+        <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="./movies">Movies</a></li>
+            <li><a href="./series">Series</a></li>
+            <li><a href="#about">About</a></li>
+            <li style="float:right">
+                {% if username %}
+                <a class="Logout">Logout &nbsp;<img src="https://pic.onlinewebfonts.com/svg/img_342905.png" style="height: 20px;height: 20px;padding: 0px 0px; margin-right: 0px;" align="right"></a>
+                {% else %}
+                    <a href="./login">Login</a>
+                {% endif %}
+            </li>
+        </ul>
+        <script src="{{ url_for('static', filename='js/Logout.js') }}"></script>
+        <fieldset>
+            <h2><u>DRAGON BALL Z: KAKAROT</u></h2>
+            <img src="https://image.api.playstation.com/vulcan/img/cfn/113077iOoRboPVZC24UITJfLs8Daca0hvKSMMC5cXx7Z7o4MKxRMaNuqV7-zrZZIsqdI77PZPsIOe4w8o2gOyOp9xcsHm0i4.png" style="height:500px;width:500px">
+            <p>
+                Relive the story of Goku and other Z Fighters in DRAGON BALL Z: KAKAROT! Beyond the epic battles, experience life in the DRAGON BALL Z world as you fight, fish, eat, and train with Goku, Gohan, Vegeta and others.Explore the new areas and adventures as you advance through the story and form powerful bonds with other heroes from the DRAGON BALL Z universe.
+            </p>
+            <a href="https://www.playstation.com/en-in/games/dragon-ball-z-kakarot/" class="button">Buy</a>
+            </br></br>
+            <hr>
+
+
+            <h2><u>Naruto Shippuden: Ultimate Ninja Storm 4</u></h2>
+            <img src="https://m.media-amazon.com/images/I/81I4IWadtbL.jpg" style="height:500px;width:500px">
+            <p>
+                The latest opus in the acclaimed STORM series is taking you on a colourful and breathtaking ride. Take advantage of the totally revamped battle system and prepare to dive into the most epic fights you’ve ever seen in the NARUTO SHIPPUDEN: Ultimate Ninja STORM series!
+            </p>
+            <a href="https://www.playstation.com/en-in/games/naruto-shippuden-ultimate-ninja-storm-4/" class="button">Buy</a>
+            </br></br>
+            <hr>
+            
+            
+            <h2><u>Persona 5</u></h2>
+            <img src="https://m.media-amazon.com/images/I/81BgoNw+WuL._SL1500_.jpg" style="height:500px;width:500px">
+            <p>
+                With the power of Persona, make these criminals have a change of heart by stealing the Treasure of their distorted desires. Join your new friends in the fight to reform society with your own sense of justice!
+            </p>
+            <a href="https://www.playstation.com/en-in/games/persona-5/" class="button">Buy</a>
+            </br></br>
+            <hr>
+            
+            
+            <h2><u>Attack on Titan 2</u></h2>
+            <img src="https://m.media-amazon.com/images/I/71acW2xVMgL._SL1080_.jpg" style="height:500px;width:500px">
+            <p>
+                Abandon all fear. Attack on Titan 2 is the gripping sequel to the action game based on the worldwide hit anime series 'Attack on Titan.'Experience the immense story of the anime alongside Eren and his companions, as they fight to save humanity from the threat of the deadly human devouring Titans.
+            </p>
+            <a href="https://store.playstation.com/en-us/product/UP4108-CUSA08956_00-AT2NAHDDGAME0000" class="button">Buy</a>
+            </br></br>
+            <hr>
+            
+            
+            <h2><u>One Piece: Pirate Warriors 4</u></h2>
+            <img src="https://m.media-amazon.com/images/I/816oWvwSJjL.jpg" style="height:500px;width:500px">
+            <p>
+                The PIRATE WARRIORS series has successfully combined the popular anime ONE PIECE with the thrilling action of the WARRIORS series to create a worldwide phenomenon selling more than four million copies! Based on the concept of 'fighting hordes of enemies while adventuring with trusted allies,' experience awesome ONE PIECE action lifted straight from the anime!
+            </p>
+            <a href="https://store.playstation.com/en-us/product/UP0700-CUSA17196_00-OPPW4NAHDDGAME00" class="button">Buy</a>
+            </br></br>
+        </fieldset>
+        <footer id="about">
+            <p>Thanks for visiting our site, and we hope you enjoy exploring all that Animebox has to offer!</p>
+            <p>&copy; 2023 AnimeBox</p><p></p>All rights reserved.</p>
+        </footer>
+    </body>
+</html>

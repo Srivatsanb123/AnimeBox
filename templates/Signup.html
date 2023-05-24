@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" type="image/x-icon" href="https://th.bing.com/th/id/R.b55ced8d256e4f77d28975cc85b668dd?rik=HwBS3fBb9KpEIQ&riu=http%3a%2f%2fwww.freepngimg.com%2fdownload%2fanime_boy%2f25983-5-anime-boy-clipart.png&ehk=9YbNkmgvue3ugN0oDzZXEUbp%2fPwQ0MsH0U75vy4yZNc%3d&risl=&pid=ImgRaw&r=0"/>
+		<script src="{{ url_for('static', filename='js/Signup.js') }}"></script>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				background-color: #202125;
+				font-family: Arial, sans-serif;
+			}
+			form {
+				width: 400px;
+				background-color: #fff;
+				padding: 40px;
+				border-radius: 5px;
+				position: center;
+				margin: 0 auto;
+			}
+			.signup {
+				text-align: center;
+				font-size: 2.5em;
+				font-weight: bold;
+				color:silver;
+			}
+			.olduser{
+				text-align: center;
+				color: aqua;
+			}
+			a{
+				background-color: #333;
+				color: #fff;
+				padding: 10px 20px;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				transition: background-color 0.2s ease-in-out;
+			}
+			input[type="text"],
+			input[type="password"],
+			input[type="email"] {
+				width: 100%;
+				padding: 10px;
+				margin-bottom: 20px;
+				border-radius: 5px;
+				border: none;
+				box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+			}
+			input[type="submit"] {
+				background-color: #333;
+				color: #fff;
+				padding: 10px 20px;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				transition: background-color 0.2s ease-in-out;
+			}
+			input[type="submit"]:hover {
+				background-color: #555;
+			}
+		</style>
+		<title>AnimeBox</title>
+	</head>
+	<body>
+		<h1 class="signup">Sign Up</h1>
+		<form onsubmit="return validateForm()" method="post">
+			{% if error %}
+				<p>{{ error }}</p>
+			{% endif %}
+			<input type="text" placeholder="Username" id="username" name="username" required><br>
+			<input type="email" placeholder="Email Id" id="email" name="email" required><br>
+			<input type="password" placeholder="Enter Password" id="pwd" name="pwd" required><br>
+			<input type="password" placeholder="Confirm Password" id="cpwd" name="cpwd" required><br>
+			<input type="submit" value="Signup">
+		</form>
+		<br>
+		<div class="olduser">
+		<strong>Already Have an Acount?</strong><br><br>
+		<a href="./login">Login</a>
+		</div>
+
+	</body>
+</html>
