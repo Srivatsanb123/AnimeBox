@@ -30,8 +30,6 @@ strong {
     font-size: 20px;
 }
 img {
-    
-    border-width: 100px;
     border-radius: 100px;
     padding: 5px 5px;
     display: block;
@@ -97,4 +95,10 @@ footer {
 .Logout{
     background-color: red;
     font-weight: bold;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
 }
