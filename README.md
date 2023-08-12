@@ -1,3 +1,3 @@
 # AnimeBox
 A website for anime fans.
-Try my website: http://srivatchu.pythonanywhere.com/
+This page uses flask for backend.This app allows the users to Know about some famous anime movies, series and games.
