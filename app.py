@@ -14,7 +14,7 @@ app.secret_key = '1234'
 
 @app.route('/login', methods=['GET','POST'])
 def login():
-    conn=sqlite3.connect('users.db')
+    conn = sqlite3.connect(os.path.join('/tmp', 'users.db'))
     c=conn.cursor()
     if request.method == 'POST':
         email = request.form['email']
@@ -33,7 +33,7 @@ def login():
 
 @app.route('/signup', methods=['GET','POST'])
 def signup():
-    conn=sqlite3.connect('users.db')
+    conn = sqlite3.connect(os.path.join('/tmp', 'users.db'))
     c=conn.cursor()
     if request.method == 'POST':
         username = request.form['username']
