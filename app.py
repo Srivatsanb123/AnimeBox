@@ -1,3 +1,4 @@
+from os import environ
 from flask import Flask, render_template, redirect, request, session
 import sqlite3
 conn=sqlite3.connect('users.db')
@@ -89,4 +90,5 @@ def series():
         return redirect('/login')
 
 if __name__=='__main__':
-    app.run(debug=True)
+    port = int(environ.get("PORT", 3000))  # Use the PORT environment variable or default to 3000
+    app.run(host="0.0.0.0", port=port)
