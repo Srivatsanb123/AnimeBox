@@ -1,7 +1,8 @@
 from os import environ
 from flask import Flask, render_template, redirect, request, session
 import sqlite3
-conn=sqlite3.connect('users.db')
+import os
+conn = sqlite3.connect(os.path.join('/tmp', 'users.db'))
 c=conn.cursor()
 c.execute('CREATE TABLE IF NOT EXISTS Profiles (name VARCHAR(20), email VARCHAR(50), password VARCHAR(20))')
 conn.commit()
